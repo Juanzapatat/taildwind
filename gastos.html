@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gastos</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-gradient-to-r from-gray-900 via-yellow-700 to-yellow-800 text-white flex flex-col items-center justify-center min-h-screen overflow-hidden">
+    <!-- Barra de navegación fija en la parte superior -->
+    <div class="navbar w-full bg-black bg-opacity-60 py-2 px-4 flex justify-center items-center fixed top-0 left-0 z-50">
+        <button class="regresar-btn bg-yellow-700 text-white py-2 px-4 rounded-md mr-4 hover:bg-gray-800 transition-colors" onclick="window.history.back()">Regresar</button>
+        <h1 class="text-2xl md:text-4xl font-bold text-yellow-500 text-center flex-grow">GASTOS</h1>
+    </div>
+
+    <div class="container flex flex-col items-center justify-start mt-20 w-full min-h-[80vh]">
+        <h2 class="text-xl mb-4">Lista de Gastos</h2>
+
+        <!-- Tabla de gastos -->
+        <table class="w-[90%] md:w-[80%] bg-black bg-opacity-60 rounded-lg shadow-lg overflow-y-scroll max-h-[600px] border-collapse">
+            <thead>
+                <tr>
+                    <th class="p-4 bg-yellow-700 text-white border border-yellow-700">Nombre del Gasto</th>
+                    <th class="p-4 bg-yellow-700 text-white border border-yellow-700">Fecha</th>
+                    <th class="p-4 bg-yellow-700 text-white border border-yellow-700">Monto del Gasto</th>
+                    <th class="p-4 bg-yellow-700 text-white border border-yellow-700">Recepto</th>
+                    <th class="p-4 bg-yellow-700 text-white border border-yellow-700">Categoría</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Gastos vacíos (5 filas) -->
+                <tr class="border border-yellow-700 text-center">
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                </tr>
+                <tr class="border border-yellow-700 text-center">
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                </tr>
+                <tr class="border border-yellow-700 text-center">
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                </tr>
+                <tr class="border border-yellow-700 text-center">
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                </tr>
+                <tr class="border border-yellow-700 text-center">
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                    <td class="p-4"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Botón para eliminar gasto -->
+        <button class="bg-yellow-700 text-white py-2 px-5 mt-6 rounded-md text-lg hover:bg-gray-800 hover:text-yellow-500 transition-colors">Eliminar Gasto</button>
+    </div>
+</body>
+
+</html>
