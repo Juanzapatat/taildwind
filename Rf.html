@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
+
+
+<!-- Este es el encabezado princpal de la pagina -->
+
 <body
     class=" overflow-y-auto font-sans m-0 p-0 bg-gradient-to-r from-[#0a0908] to-[#ba5e00] text-[#f7f7f7] flex justify-center items-start min-h-screen flex-col overflow-hidden">
     <header class="w-full text-center bg-black bg-opacity-60 py-5">
         <h1 class="text-2xl font-bold text-[#ba5e00]">Sistema de Registro de Factura</h1>
     </header>
 
+
+
+    <!--  Barra de navegación que contiene los botones de regresar y revisar factura  -->
+
     <div class="container flex justify-between w-full max-w-[1200px] p-5 mx-auto">
         <nav class="barra_lateral w-[250px] bg-black bg-opacity-60 p-5 flex flex-col items-center">
-            <a href="interfaz.html" class="w-full mb-2">
+            <a href="intefaz.html" class="w-full mb-2">
                 <button
                     class="bg-[#ba5e00] text-white border-none py-2 px-5 text-lg font-bold rounded transition duration-300 ease-in-out hover:bg-[#d8a23e] w-full">Regresar</button>
             </a>
-            <a href="revisar.html" class="w-full mb-2">
+
+            <a href="" class="w-full mb-2">
                 <button
                     class="bg-[#ba5e00] text-white border-none py-2 px-5 text-lg font-bold rounded transition duration-300 ease-in-out hover:bg-[#d8a23e] w-full">Revisar
                     Factura</button>
             </a>
             <img src="img/WhatsApp_Image_2024-10-17_at_4.48.58_PM-removebg-preview.png" alt="Logo de la empresa"
                 class="imagen-debajo mt-5 max-w-full rounded" width="600">
+
+
+            <!--  Mensaje de bienvenida a la pagina  -->
         </nav>
         <main class="flex-1 p-5 text-white">
             <div class="bienvenida text-center bg-black bg-opacity-60 p-7 rounded mb-5">
@@ -33,6 +46,10 @@
                 <p class="text-base">Por favor, diligencie el siguiente formulario para realizar su registro de factura
                     con exito.</p>
             </div>
+
+
+
+            <!-- Formulario donde se registrara los respectivos detalles del registro como nombre, fecha... etc.  -->
             <form
                 class="formulario flex flex-col gap-4 max-w-[450px] w-full p-5 bg-black bg-opacity-90 rounded mx-auto items-center">
                 <label for="nombre" class="text-[#ba5e00] font-bold w-full text-left">Nombre del Registro:</label>
@@ -62,4 +79,5 @@
         </main>
     </div>
 </body>
+
 </html>
